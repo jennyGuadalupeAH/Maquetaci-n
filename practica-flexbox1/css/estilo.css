@@ -12,266 +12,217 @@ h1{
 .content-flex{
     display:flex; /*definee el contenedor ds flexiblld*/
     /*width: 400px;*/
-    height: 400px;
+    height: 610px;
     border: 3px solid green;
     margin: 0 auto;
     background: black;
-    flex-direction: column; /*auto ajuste*/
+    flex-direction: row; /*auto ajuste*/
+    align-items: center;
     /*flex-wrap: wrap-reverse;*/
-    
+   
 }
 .contenido{
- width: 80px;
- height: 80px;
-
+ width: 50px;
+ height: 50px;
+ 
 
 }
 
 .contenido:nth-child(1){
     background-color: violet;
-    order: 3;
+
 }
 
 .contenido:nth-child(2){
     background-color: powderblue;
-    order: 5;
+    align-self: flex-start;
+   
 }
 .contenido:nth-child(3){
     background-color: gold;
-    order: 4;
+   
 }
 .contenido:nth-child(4){
     background-color: aqua;
-    order: 1;
+ 
 }
 .contenido:nth-child(5){
     background-color: pink;
-    order: 6;
+    
+   
 }
 .contenido:nth-child(6){
     background-color: red;
-    order: 2;
+ 
+}
+.contenido:nth-child(7){
+    background-color: blue;
+ 
+}
+.contenido:nth-child(8){
+    background-color: salmon;
+ 
 }
 
-/*Todo lo anterior es para una
- resolución menor o igual
-  a 500px(MOVILE FIRST)*/
 
-  /*se utiliza un media
-   query para validar la
-    resolucion 800px*/
-
-    @media  screen and (min-width:800px){
-        .content-flex{
-       
-            flex-direction: row; /*auto ajuste*/
-               
-        }
-
-        .contenido:nth-child(1){
-            background-color: violet;
-            flex-grow: 2;
-            
-        }
-        
-        
-        .contenido:nth-child(2){
-            background-color: powderblue;
-            order: 6;
-            flex-grow: 1;
-            
-        }
-        .contenido:nth-child(3){
-            background-color: gold;
-            order: 1;
-        }
-        .contenido:nth-child(4){
-            background-color: aqua;
-            order: 4;
-        }
-        .contenido:nth-child(5){
-            background-color: pink;
-            order: 2;
-        }
-        .contenido:nth-child(6){
-            background-color: red;
-            order: 5;
-        }
-    }
-
+@media  screen and (min-width:568px){
+    .content-flex{
    
-    @media  screen and (min-width:500px){
-        .content-flex{
-       
-            flex-direction: column; /*auto ajuste*/
-               
-        }
-        
-        .contenido:nth-child(1){
-            background-color: violet;
-            order: 3;
-            flex-grow: 0;
-            
+        flex-direction: column; 
            
-        }
-        
-        .contenido:nth-child(2){
-            background-color: powderblue;
-            order: 5;
-            
-            
-        }
-        .contenido:nth-child(3){
-            background-color: gold;
-            order: 4;
-            flex-grow: 0;
-           
-        }
-        .contenido:nth-child(4){
-            background-color: aqua;
-            order: 1;
-            flex-grow: 0;
-           
-        }
-        .contenido:nth-child(5){
-            background-color: pink;
-            order: 6;
-        }
-        .contenido:nth-child(6){
-            background-color: red;
-            order: 2;
-        }
     }
 
-    @media  screen and (min-width:700px){
-        .content-flex{
-       
-            flex-direction: row; /*auto ajuste*/
-               
-        }
+    .contenido:nth-child(1){
+        background-color: violet;
+      
         
-        .contenido:nth-child(1){
-            background-color: violet;
-            order: 1;
-            flex-grow: 1;
-            
-           
-        }
-        
-        .contenido:nth-child(2){
-            background-color: powderblue;
-            order: 2;
-            flex-grow: 0;
-            
-        }
-        .contenido:nth-child(3){
-            background-color: gold;
-            order: 3;
-            flex-grow: 0;
-            
-        }
-        .contenido:nth-child(4){
-            background-color: aqua;
-            order: 4;
-            flex-grow: 0;
-           
-        }
-        .contenido:nth-child(5){
-            background-color: pink;
-            order: 5;
-        }
-        .contenido:nth-child(6){
-            background-color: red;
-            order: 6;
-            flex-grow: 2;
-        }
-    }
-
-    @media  screen and (min-width:900px){
-        .content-flex{
-       
-            flex-direction: row; /*auto ajuste*/
-               
-        }
-        
-        .contenido:nth-child(1){
-            background-color: violet;
-            order: 3;
-            flex-grow: 2;
-            
-           
-        }
-        
-        .contenido:nth-child(2){
-            background-color: powderblue;
-            order: 6;
-            flex-grow: 1;
-            
-        }
-        .contenido:nth-child(3){
-            background-color: gold;
-            order: 1;
-            flex-grow: 0;
-            text-align: center;
-        }
-        .contenido:nth-child(4){
-            background-color: aqua;
-            order: 4;
-            flex-grow: 0;
-           
-        }
-        .contenido:nth-child(5){
-            background-color: pink;
-            order: 2;
-        }
-        .contenido:nth-child(6){
-            background-color: red;
-            order: 5;
-            flex-grow: 0;
-        }
     }
     
-    @media  screen and (min-width:1200px){
+    
+    .contenido:nth-child(2){
+        background-color: powderblue;
+        align-self: flex-end;
+       
+        
+    }
+    .contenido:nth-child(3){
+        background-color: gold;
+      
+    }
+    .contenido:nth-child(4){
+        background-color: aqua;
+        align-self: flex-end;
+       
+    }
+    .contenido:nth-child(5){
+        background-color: pink;
+       
+    }
+    .contenido:nth-child(6){
+        background-color: red;
+        align-self: flex-end;
+     
+    }
+    .contenido:nth-child(7){
+        background-color: blue;
+     
+    }
+    .contenido:nth-child(8){
+        background-color: salmon;
+        align-self: flex-end;
+     
+    }
+}
+    @media  screen and (min-width:768px){
         .content-flex{
        
-            flex-direction: row; /*auto ajuste*/
+            flex-direction: column; 
                
         }
-        
+    
         .contenido:nth-child(1){
             background-color: violet;
-            order: 6;
-            flex-grow: 0;
+
+            align-self: center;
+          
             
-           
         }
+        
         
         .contenido:nth-child(2){
             background-color: powderblue;
-            order: 1;
-            flex-grow: 1;
+            align-self: flex-start;
+           
+           
             
         }
         .contenido:nth-child(3){
             background-color: gold;
-            order: 5;
-            flex-grow: 2;
-            text-align: center;
+            align-self: flex-end;
+          
         }
         .contenido:nth-child(4){
             background-color: aqua;
-            order: 2;
-            flex-grow: 1;
+            align-self: flex-start;
            
         }
         .contenido:nth-child(5){
             background-color: pink;
-            order: 3;
-            flex-grow: 0;
+            align-self: flex-end;
+           
         }
         .contenido:nth-child(6){
             background-color: red;
-            order: 4;
-            flex-grow: 0;
+            align-self: flex-start;
+           
+         
+        }
+        .contenido:nth-child(7){
+            background-color: blue;
+            align-self: flex-end;
+         
+        }
+        .contenido:nth-child(8){
+            background-color: salmon;
+            align-self: center;
+          
+         
+        }
+    }
+    @media  screen and (min-width:968px){
+        .content-flex{
+       
+            flex-direction: row; 
+
+               
+        }
+    
+        .contenido:nth-child(1){
+            background-color: violet;
+
+            align-self: center;
+          
+            
+        }
+        
+        
+        .contenido:nth-child(2){
+            background-color: powderblue;
+            align-self: flex-start;
+           
+           
+            
+        }
+        .contenido:nth-child(3){
+            background-color: gold;
+           align-items: flex-end;
+          
+        }
+        .contenido:nth-child(4){
+            background-color: aqua;
+            align-self: center;
+           
+        }
+        .contenido:nth-child(5){
+            background-color: pink;
+            align-self:  flex-start;
+           
+        }
+        .contenido:nth-child(6){
+            background-color: red;
+            align-self: center;
+           
+         
+        }
+        .contenido:nth-child(7){
+            background-color: blue;
+            align-self: flex-end;
+         
+        }
+        .contenido:nth-child(8){
+            background-color: salmon;
+            align-self:flex-start;
+          
+         
         }
     }
